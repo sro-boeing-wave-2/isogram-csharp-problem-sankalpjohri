@@ -72,7 +72,7 @@ namespace Isogram.Tests
         public void TrueForNameSeparatedBySpace()
         {
             Check check = new Check();
-            bool actual = check.CheckIsogram("Rahul Verma");
+            bool actual = check.CheckIsogram("Rahul Verm");
             bool expected = true;
             Assert.Equal(actual, expected);
         }

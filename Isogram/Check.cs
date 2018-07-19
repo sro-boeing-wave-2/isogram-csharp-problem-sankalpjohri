@@ -10,11 +10,7 @@ namespace Isogram
             Dictionary<char, int> charMap = new Dictionary<char, int>();
             foreach (char c in val)
             {
-                if (char.IsWhiteSpace(c))
-                {
-                    charMap = new Dictionary<char, int>();
-                }
-                else if (char.IsLetter(c))
+                if (char.IsLetter(c))
                 {
                     if (charMap.ContainsKey(c))
                     {
